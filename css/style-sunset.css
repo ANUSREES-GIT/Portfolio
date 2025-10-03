@@ -1,0 +1,43 @@
+:root {
+    --bg: linear-gradient(180deg, #f97316 0%, #ec4899 50%, #3b82f6 100%);
+    --card: rgba(0,0,0,0.3);
+    --muted: #fde68a;
+    --accent: #facc15;
+    --glass: rgba(255, 255, 255, 0.08);
+    --radius: 14px;
+    --maxw: 1100px;
+    --gap: 20px;
+    --transition: 300ms ease-in-out;
+    font-family: "Inter", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: #fff;
+  }
+  
+  a, .logo {
+    color: var(--accent);
+  }
+  
+  .btn {
+    background: linear-gradient(90deg, #facc15, #f97316);
+    color: #111;
+  }
+  
+  .btn.ghost {
+    border: 1px solid #facc15;
+    color: #fff;
+  }
+  
+  .project-card {
+    background: var(--card);
+    backdrop-filter: blur(6px);
+  }
+  
+  .skill-pill {
+    background: rgba(250, 204, 21, 0.25);
+    color: #facc15;
+  }
+  
