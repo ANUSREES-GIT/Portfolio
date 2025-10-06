@@ -1,12 +1,12 @@
 /* === Root / Variables === */
 :root {
-    --bg: #1E1E2F;
-    --card: #724cf9;
-    --text: #FFFFFF;
-    --muted: #CCCCCC;
-    --accent: #FF6F61;
-    --highlight: #FFD166;
-    --border: #e0e0e0;
+    --bg: #ceab72; /* Warm beige background */
+    --card: #f1c283; /* Soft sand beige for cards */
+    --text: #3d3723; /* Deep brown-gray for text */
+    --muted: #b3794d; /* Muted taupe */
+    --accent: #3a2b1d; /* Warm golden brown accent */
+    --highlight: #9e7b4d; /* Light amber for highlights */
+    --border: #E8DCC2; /* Light beige border */
     --radius: 12px;
     --maxw: 1200px;
     --gap: 20px;
@@ -60,7 +60,7 @@ ul {
 
 .sidebar h1 {
     font-size: 1.5rem;
-    color: var(--highlight);
+    color: var(--accent);
     margin-bottom: 30px;
 }
 
@@ -101,7 +101,7 @@ ul {
 
 .btn:hover {
     background: var(--highlight);
-    color: #222;
+    color: var(--text);
 }
 
 .btn.ghost {
@@ -117,8 +117,8 @@ ul {
 
 /* === Hero / Home Section === */
 .home-section {
-    background: #724cf9;
-    color: #fff;
+    background: var(--card);
+    color: var(--text);
     padding: 80px 20px;
     border-radius: 16px;
     overflow: hidden;
@@ -140,11 +140,11 @@ ul {
 
 .home-profile {
     margin-bottom: 20px;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 10%;
     overflow: hidden;
-    border: 4px solid #CFD848;
+    border: 4px solid var(--highlight);
 }
 
 .home-profile img {
@@ -160,12 +160,12 @@ ul {
 
 .home-text h2 i {
     margin-left: 8px;
-    color: #CFD848;
+    color: var(--accent);
 }
 
 .home-text h3 {
     font-size: 1.6rem;
-    color: #CFD848;
+    color: var(--accent);
     margin-bottom: 20px;
 }
 
@@ -184,11 +184,11 @@ ul {
 
 /* === About Section === */
 .about-section {
-    background: #724cf9;
-    color: #fff;
+    background: var(--card);
+    color: var(--text);
     padding: 60px 20px;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
 .about-grid {
@@ -219,14 +219,14 @@ ul {
 .about-content h3 {
     margin-top: 20px;
     font-size: 1.5rem;
-    color: #CFD848;
+    color: var(--accent);
 }
 
 .about-content .highlight {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     padding: 3px 8px;
     border-radius: 6px;
-    color: #fff;
+    color: var(--text);
     font-weight: 600;
 }
 
@@ -240,7 +240,7 @@ ul {
     margin-top: 10px;
     padding: 10px 14px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.25);
     font-weight: 500;
     transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
     cursor: default;
@@ -249,23 +249,23 @@ ul {
 .skills-icons span:hover,
 .hobbies-icons span:hover {
     transform: translateY(-6px);
-    background: #CFD848;
-    color: #1f1f1f;
-    box-shadow: 0 6px 20px rgba(207, 209, 72, 0.5);
+    background: var(--highlight);
+    color: var(--text);
+    box-shadow: 0 6px 20px rgba(214, 171, 103, 0.4);
     animation: hoverFloat 0.6s ease-in-out forwards;
 }
 
 .skills-icons i,
 .hobbies-icons i {
-    color: #CFD848;
+    color: var(--accent);
 }
 
 /* === Resume Section === */
 .resume-section {
     padding: 60px 20px;
-    background: #724cf9;
+    background: var(--card);
     border-radius: 16px;
-    color: #fff;
+    color: var(--text);
 }
 
 .resume-layout {
@@ -276,16 +276,16 @@ ul {
 
 .resume-sidebar {
     width: 220px;
-    background: #1E1E2F;
+    background: var(--bg);
     padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     position: sticky;
     top: 100px;
 }
 
 .resume-sidebar h3 {
-    color: #CFD848;
+    color: var(--accent);
     margin-bottom: 16px;
     font-size: 1.2rem;
 }
@@ -295,14 +295,14 @@ ul {
 }
 
 .resume-nav a {
-    color: #fff;
+    color: var(--text);
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .resume-nav a:hover,
 .resume-nav a.active {
-    color: #FFD166;
+    color: var(--accent);
 }
 
 .resume-content {
@@ -313,14 +313,14 @@ ul {
 }
 
 .resume-content section {
-    background: #000000;
+    background: #FFFFFF;
     padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
 
 .resume-content h2 {
-    color: #FFD166;
+    color: var(--accent);
     margin-bottom: 12px;
     font-size: 2rem;
 }
@@ -331,17 +331,17 @@ ul {
 
 /* === Projects Section === */
 .projects-section {
-    background: #724cf9;
-    color: #fff;
+    background: var(--card);
+    color: var(--text);
     padding: 60px 20px;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
 
 .projects-section h2 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #FFD166;
+    color: var(--accent);
 }
 
 .projects-section p {
@@ -356,16 +356,16 @@ ul {
 }
 
 .project-card {
-    background: #000000;
+    background: #FFFFFF;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(255, 111, 97, 0.6);
+    box-shadow: 0 12px 30px rgba(212, 163, 115, 0.4);
 }
 
 .project-card img {
@@ -379,12 +379,12 @@ ul {
 }
 
 .project-card h3 {
-    color: #FFD166;
+    color: var(--accent);
     margin-bottom: 10px;
 }
 
 .project-card p {
-    color: #fff;
+    color: var(--text);
     font-size: 0.95rem;
 }
 
@@ -393,10 +393,10 @@ ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
-    background: #724cf9;
+    background: var(--card);
     padding: 60px 20px;
     border-radius: 16px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
     position: relative;
 }
 
@@ -404,7 +404,7 @@ ul {
     background: var(--card);
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -413,7 +413,7 @@ ul {
 
 .contact-info-card:hover, .contact-form-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(255,111,97,0.6);
+    box-shadow: 0 12px 30px rgba(212,163,115,0.4);
 }
 
 .contact-info-card h2 {
@@ -438,12 +438,12 @@ ul {
 }
 
 .contact-info-list li a {
-    color: var(--highlight);
+    color: var(--accent);
     transition: color 0.3s ease;
 }
 
 .contact-info-list li a:hover {
-    color: var(--accent);
+    color: var(--highlight);
 }
 
 .contact-form label {
@@ -459,8 +459,8 @@ ul {
     padding: 12px 14px;
     border-radius: 10px;
     border: none;
-    background: #222;
-    color: #fff;
+    background: #FFFFFF;
+    color: var(--text);
     font-size: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -533,64 +533,21 @@ ul {
     .resume-sidebar { width: 100%; position: static; top: auto; }
 }
 
+.social-links {
+  display: flex;
+  justify-content: flex-start; /* or center, if you want them centered */
+  align-items: center;
+  gap: 25px; /* increase space between icons */
+  margin-top: 18px;
+}
 
-/* Home Section Illustration */
-.home-illustration {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  /* Contact Section Illustration Below */
-  .contact-illustration-below {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 900px) {
-    .home-grid {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .home-illustration {
-      margin-top: 30px;
-    }
-  
-    .contact-grid {
-      grid-template-columns: 1fr;
-      gap: 30px;
-      text-align: center;
-    }
-  
-    .contact-illustration-below {
-      margin-top: 20px;
-    }
-  
-    .contact-form .form-actions {
-      flex-direction: column;
-    }
-  }
-  
-  .social-links {
-    margin-top: 20px;
-    display: flex;
-    gap: 18px;
-  }
-  
-  .social-links a {
-    font-size: 1.6rem;
-    color: var(--highlight);
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .social-links a:hover {
-    color: var(--accent);
-    transform: scale(1.2);
-  }
-  
+.social-links a {
+  font-size: 1.8rem; /* increase icon size */
+  color: var(--accent);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-6px) scale(1.1); /* smooth hover pop-up */
+  color: var(--highlight);
+}
